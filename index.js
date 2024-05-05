@@ -1,16 +1,26 @@
-console.log(`Hello`)
-console.log(`I like pizza`)
+// variable = A container that stores a value.
+//            Behaves as if it were the value it contains.
 
-// window.alert(`This is an alert`)
-// window.alert(`I like pizza`)
+// 1. declaration   let x;
+// 2. assignment    x = 100;
 
-document.getElementById("myH1").textContent = `Hello`;
-document.getElementById("myP").textContent = `I like Pizza!`
+let age = 21;
+
+let firstName = "Althaf"
+let lastName = "Rifath"
+
+let online = true;
 
 
-/*
-    This 
-    is 
-    a 
-    comment 
-*/
+console.log(typeof age);
+console.log(`I'm ${age} years old`);
+
+console.log(typeof firstName);
+console.log(`Your Full name is ${firstName} ${lastName}`);
+
+console.log(typeof online);
+console.log(`Althaf is online: ${online}`);
+
+document.getElementById("p1").textContent = `My name is ${firstName}`;
+document.getElementById("p2").textContent = `I'm ${age} years old`;
+document.getElementById("p3").textContent = `Am I online ${online}`;
