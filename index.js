@@ -1,14 +1,8 @@
+// type conversion = change the datatype of a value to another (strings, numbers, booleans)
 
-// Professional Way
-let username;
+let age = window.prompt("How old are you?");
 
-document.getElementById("mySubmit").onclick = function() {
-    username = document.getElementById("myText").value;
-    document.getElementById("myH1").textContent = `Hello ${username}`
-}
+age = Number(age);
+age += 1;
 
-
-// Easy Way
-// let username;
-// username = window.prompt("What is your username?");
-// console.log(username);
+console.log(age, typeof age);
