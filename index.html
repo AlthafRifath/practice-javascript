@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label>Enter Your age:</label><br>
-    <input type="text" id="myText"><br>
+    <input type="checkbox" id="myCheckBox">
+    <label for="myCheckBox">Subscribe</label><br><br>
+
+    <input type="radio" id="visaButton" name="card">
+    <label for="visaButton">Visa</label><br>
+    <input type="radio" id="masterCardButton" name="card">
+    <label for="masterCardButton">MasterCard</label><br>
+    <input type="radio" id="payPalButton" name="card">
+    <label for="payPalButton">PayPal</label><br><br>
+
     <button type="submit" id="mySubmit">Submit</button>
-    <p id="resultElement"></p>
+
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
 
     <script src="index.js"></script>
 </body>
