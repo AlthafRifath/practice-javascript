@@ -1,33 +1,18 @@
-// .checked = property that determines the checked state of an HTML checkbox or radio button element 
+// ternary operator = a shortcut to if{} and else{} statements helps to assign a variable based on a condition 
+//                    condition ? codeIfTrue : CodeIfFalse;
 
-const myCheckBox = document.getElementById("myCheckBox");
-const visaButton = document.getElementById("visaButton");
-const masterCardButton = document.getElementById("masterCardButton");
-const payPalButton = document.getElementById("payPalButton");
-const mySubmit = document.getElementById("mySubmit");
-const subResult = document.getElementById("subResult");
-const paymentResult = document.getElementById("paymentResult");
+let age = 21;
+let message = age >= 18 ? "You are an Adult" : "You are not an Adult";
+console.log(message);
 
-mySubmit.onclick = function() {
+let time = 10;
+let greeting = time < 12 ? "Good Morning!" : "Good Afternoon!";
+console.log(greeting);
 
-    if(myCheckBox.checked) {
-        subResult.textContent = `You are subscribed`
-    }
-    else{
-        subResult.textContent = `You are not subscribed`
-    }
+let isStudent = true;
+let inform = isStudent ? "Yes" : "No";
+console.log(inform);
 
-    if(visaButton.checked){
-        paymentResult.textContent = `You are paying with Visa`
-    }
-    else if(masterCardButton.checked){
-        paymentResult.textContent = ` You are paying with MasterCard`
-    }
-    else if(payPalButton.checked){
-        paymentResult.textContent = ` You are paying with PayPal`
-    }
-    else{
-        paymentResult.textContent = `Select a payment a method`
-    }
-
-}
+let purchaseAmount = 150;
+let discount = purchaseAmount >= 100 ? 10 : 0;
+console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/10)}`)
